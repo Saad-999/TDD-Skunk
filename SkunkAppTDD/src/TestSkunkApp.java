@@ -28,6 +28,7 @@ public class TestSkunkApp
 		Roll roll = new Roll();
 		assertTrue(roll.getLastTotal()<= 12);
 		assertTrue(roll.getLastTotal()>=2);
+		// comment!
 
 	}
 	
