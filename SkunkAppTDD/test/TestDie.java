@@ -6,9 +6,15 @@ public class TestDie
 {
 
 	@Test
-	public void test()
+	public void rangeOfLastRoll()
 	{
-		fail("Not yet implemented");
+		Die d = new Die();
+		
+		for (int i=0; i < 1000; i++)
+		{
+			d.roll();
+			assertTrue(d.getLastRoll() >= 1 && d.getLastRoll() <= 6);
+		}
 	}
 
 }
