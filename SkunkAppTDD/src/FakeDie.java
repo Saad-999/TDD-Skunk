@@ -18,6 +18,8 @@ public class FakeDie extends Rollable
 		fakeRolls = new ArrayList<Integer>();
 		for (int i : it)
 			fakeRolls.add(i);
+		if (it.length==0)
+			fakeRolls.add(1);
 	}
 
 	public void roll()
